@@ -1,0 +1,4 @@
+
+1. Eu não pedi ao modelo para que o script apagasse os backups com mais de 30 dias, pois a remoção ocorreria via lifecycle poliicy do próprio serviço S3.
+2. Na questão não menciona o nome da secret em que está a senha da base. É mencionado apenas do nome da variável. Então eu tomei a liberdade de escolher um nome para a secret.
+3. Eu esqueci de mencionar que a EC2 já havia a permissão via role, então a LLM indicou como o ajuste da role deveria ser feito.
