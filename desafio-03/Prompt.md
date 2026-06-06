@@ -1,0 +1,24 @@
+# Task
+Crie um relatório com possíveis ajustes que podem ser aplicados para reduzir custos da cloud.
+
+# Action
+Analise a planilha de custos de cloud abaixo e gere um relatório com oportunidades de cortes de custo, ordenando por impacto. Cada item identificado também deve apresentar o custo da conta total em percentual, o esforço de implementação do ajuste, os riscos envolvidos e os pré-requisitos para implementar a alteração.
+
+```
+servico,categoria,custo_mensal_usd,uso_medio_pct,observacao
+EC2 reservada,compute,4200,72,contrato de 1 ano
+EC2 on-demand,compute,8200,45,workloads variaveis
+EKS,compute,6700,58,3 clusters
+RDS PostgreSQL,databases,8200,62,multi-AZ
+ElastiCache Redis,databases,2100,40,cluster de producao
+S3 Standard,storage,3100,,5 buckets principais
+EBS gp3,storage,1600,68,volumes de producao
+CloudWatch Logs,observability,2800,,retencao de 90 dias
+CloudWatch Metrics,observability,900,,
+Data Transfer Out,network,1900,,trafego entre regioes
+NAT Gateway,network,1200,,3 gateways ativos
+Lambda,compute,900,30,~12M invocacoes/mes
+```
+
+# Goal
+Redução do custo de cloud em 15%, sem prejudicar o SLA
